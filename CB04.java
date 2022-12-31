@@ -10,13 +10,20 @@ import java.util.Scanner;
  *
  * @author Laptop
  */
-public class CB02 {
+public class CB04 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int a, b;
-        a = scanner.nextInt();
-        b = scanner.nextInt();
+        a = sc.nextInt();
+        b = sc.nextInt();    
         
         System.out.println(a+b);
+        System.out.println(a-b);
+        System.out.println(a*b);
+        if(b==0){
+            System.out.println("INF");
+        }
+        else
+            System.out.println((float)a/b);
     }
 }
